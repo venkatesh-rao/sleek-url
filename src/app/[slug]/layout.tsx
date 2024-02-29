@@ -1,7 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Image from "next/image";
 import "./globals.css";
 
 const font = Inter({ subsets: ["latin"] });
@@ -19,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <div className="flex flex-row max-w-screen-2xl mx-auto py-10 px-4 border-b gap-2">
-          <Image src="/sleek-url.svg" alt="Logo" width="40" height="40" />
+        <div className="flex flex-row max-w-screen-2xl mx-auto py-10 px-4 border-b">
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             Sleek URL
           </h1>
